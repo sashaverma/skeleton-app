@@ -1,4 +1,5 @@
+var base = require('./controllers/base_controller');
+
 module.exports.initialize = function(app) {
-	//app.get('/api/search/resource/:fuzzy_search_query', refdata.fuzzy_brand_search);
-  
+	app.get('/api/hello', base.hello_world);
 };

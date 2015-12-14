@@ -6,13 +6,13 @@ var nodemon = require('gulp-nodemon');
 
 var APP_START_DIRECTORY = 'app';
 var src_paths = {
-    sass: ['../../client/style/scss/*.scss', '../../client/style/scss/**/*.scss'],
-    js: ['../../client/scripts/js/*.js', '../../client/scripts/js/**/*.js', '../../app/**/*.js'],
-    html: ['../../client/scripts/js/**/*.html']
+    sass: ['../client/style/scss/*.scss', '../client/style/scss/**/*.scss'],
+    js: ['../client/scripts/js/*.js', '../client/scripts/js/**/*.js', '../app/**/*.js'],
+    html: ['../client/scripts/js/**/*.html']
 };
 var dest_paths = {
-    sass: '../../client/style/css',
-    js: './client/scripts/built'
+    sass: '../client/style/css',
+    js: '../client/scripts/built'
 };
 
 gulp.task('lint', function () {  
@@ -29,10 +29,10 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(dest_paths.sass, {cwd: APP_START_DIRECTORY}));
 });
 
-gulp.task('dev', function () {
+gulp.task('default', function () {
     nodemon({ script: 'server.js',
         ext: 'html js scss',
-        ignore: ['../../client/scripts/3rd'],
+        ignore: ['../client/scripts/3rd'],
         args: ['local'],
         cwd: APP_START_DIRECTORY,
         tasks: ['lint', 'sass'],

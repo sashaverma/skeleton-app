@@ -27,7 +27,7 @@ app.use(session({
   saveUninitialized: false
 }));
 
-app.use('/api', express.static(path.join(__dirname, '/../client')));
+app.use('/api', express.static(path.join(__dirname, '../client')));
 
 routes.initialize(app);
 

@@ -1,17 +1,17 @@
 define(function(require) {  
-  var Marionette = require("marionette");
-  var Backbone = require("backbone");
-  var Controller = require('js/Controller');
-  var MyRouter = Marionette.AppRouter.extend({
-    appRoutes: {      
-      "": "index"
-    },
+    var Marionette = require("marionette");
+    var Backbone = require("backbone");
+    var Controller = require('js/Controller');
+    var MyRouter = Marionette.AppRouter.extend({
+        appRoutes: {      
+            "": "index"
+        },
+        initialize: function(options){
+            console.log('router created');
+            this.controller = new Controller({app: options.app});
+        }
+    });
 
-    initialize: function(App){
-      this.controller = Controller;
-    }
-  });
-
-  return MyRouter;
+    return MyRouter;
 
 });
