@@ -50,11 +50,13 @@ define(function(require){
   };
   
   // set up the app instance
-  var App = new Marionette.Application();          
-  App.router = new DatatronRouter(Datatron);      
+  var App = new Marionette.Application();
+
+  App.router = new Router();      
 
   //once app is started start backbone history
   App.on("start", function(){
+    console.log('started');
     Backbone.history.start();
   });
   App.start();
