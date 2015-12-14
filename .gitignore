@@ -1,0 +1,11 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+client/scripts/3rd/*/
+
+.DS_Store
+
+# CSS (compiled through sass)
+*.css
+
+Ap8naV9pirf2uT

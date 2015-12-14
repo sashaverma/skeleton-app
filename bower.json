@@ -1,0 +1,33 @@
+{
+  "name": "skeleton-app",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sashaverma/skeleton-app",
+  "authors": [
+    "Sasha Verma"
+  ],
+  "description": "app for body labs",
+  "main": "main.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/scripts/3rd",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "backbone": "~1.2.3",
+    "marionette": "~2.4.4",
+    "underscore": "~1.8.3",
+    "async": "~1.5.0",
+    "requirejs": "~2.1.22"
+  }
+}
