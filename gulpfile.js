@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
-
 var APP_START_DIRECTORY = 'app';
 var src_paths = {
     sass: ['../client/style/scss/*.scss', '../client/style/scss/**/*.scss'],

@@ -1,5 +1,4 @@
-# Skeleton App
+# Skele App
 
 ## Description
-
-A skeleton for a RESTful app.
+Skeleton application for Body Labs exercise

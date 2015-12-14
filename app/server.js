@@ -1,3 +1,4 @@
+
 var express = require('express'),
     http = require('http'),
     path = require('path'),
@@ -27,14 +28,14 @@ app.use(session({
   saveUninitialized: false
 }));
 
-app.use('/api', express.static(path.join(__dirname, '../client')));
+app.use('/', express.static(path.join(__dirname, '../client')));
 
 routes.initialize(app);
 
 var server = http.createServer(app);
 
 if ('development' == app.get('env')) {
-	app.use( errorHandler({server: server}) );
+  app.use( errorHandler({server: server}) );
 }
 
 server.listen(app.get('port'), function() {
