@@ -5,6 +5,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
     errorHandler = require('express-error-handler'),
+    mongodb = require('mongodb'),
     morgan = require('morgan'),
     routes = require('./routes'),
     app = express();
