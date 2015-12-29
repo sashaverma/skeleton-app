@@ -1,4 +1,4 @@
 # Skele App
 
 ## Description
-Skeleton application for Body Labs exercise
+Skeleton application for an exercise
